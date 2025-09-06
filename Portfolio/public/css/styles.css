@@ -1,0 +1,92 @@
+.fixed-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Caleb’s Kitchen (mobile style) */
+.modal-main-img {
+  display: block;
+  max-width: 280px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Project 3 (web style - larger images) */
+#project3Modal .modal-main-img {
+  max-width: 85%;
+  max-height: none;
+  width: auto;
+  height: auto;
+}
+::placeholder {
+  color: #bbb !important; /* light gray for visibility */
+  opacity: 1; /* ensures full visibility */
+}
+
+/* For cross-browser support */
+:-ms-input-placeholder {
+  color: #bbb !important;
+}
+::-ms-input-placeholder {
+  color: #bbb !important;
+}
+/* Navbar link hover effect */
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0dcaf0; /* light blue underline */
+  transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0dcaf0 !important; /* change text color on hover */
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* underline expands on hover */
+}
+
+/* Add this to your public/css/styles.css */
+#skills .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 575px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  #home .btn {
+    width: 100%;
+  }
+}
