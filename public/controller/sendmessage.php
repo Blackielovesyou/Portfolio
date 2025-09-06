@@ -26,7 +26,7 @@ function sendEmail($senderName, $senderEmail, $senderMsg, $mail) {
 
     // Set sender and recipient
     $mail->setFrom('admin@projectworld.online', 'ProjectWorld');
-    $mail->addAddress("khensabeniano10@gmail.com", '');
+    $mail->addAddress("khensabeniano7@gmail.com", '');
 
     // Set email content
     $mail->isHTML(true);
